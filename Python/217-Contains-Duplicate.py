@@ -1,3 +1,4 @@
+#1
 class Solution(object):
     def containsDuplicate(self, nums):
         """
@@ -15,3 +16,13 @@ class Solution(object):
                 else:
                     s = nums[i]
         return False
+
+#2
+class Solution(object):
+def containsDuplicate(self, nums):
+    """
+    :type nums: List[int]
+    :rtype: bool
+    """
+
+    return True if len(nums)-len(set(nums))>0 else False
