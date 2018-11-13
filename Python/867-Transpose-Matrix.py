@@ -12,3 +12,13 @@ class Solution:
                 result[j][i] = A[i][j]
         
         return result
+
+    
+# solution 2    
+class Solution(object):
+    def transpose(self, A):
+        """
+        :type A: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        return [[row[i] for row in A] for i in range(len(A[0]))]
